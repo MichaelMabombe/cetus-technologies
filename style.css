@@ -216,8 +216,13 @@ h2 {
   border-radius: 10px;
   background: #fde8ea;
   border: 1px solid #f6c6cb;
+  color: var(--brand);
   font-size: 1rem;
   line-height: 1;
+}
+
+.service-icon i {
+  font-size: 1.05rem;
 }
 
 .card p {
