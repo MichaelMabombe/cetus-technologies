@@ -201,6 +201,25 @@ h2 {
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
+.service-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #fde8ea;
+  border: 1px solid #f6c6cb;
+  font-size: 1rem;
+  line-height: 1;
+}
+
 .card p {
   color: var(--muted);
   margin-bottom: 12px;
