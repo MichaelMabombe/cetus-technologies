@@ -72,6 +72,9 @@ a {
   color: var(--muted);
   font-weight: 600;
   font-size: 0.94rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .nav a:hover,
@@ -88,6 +91,10 @@ a {
   font-size: 0.92rem;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn i {
+  margin-right: 7px;
 }
 
 .btn:hover {
@@ -201,6 +208,11 @@ h2 {
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
+.card h3 i {
+  margin-right: 8px;
+  color: var(--brand);
+}
+
 .service-title {
   display: flex;
   align-items: center;
@@ -223,6 +235,10 @@ h2 {
 
 .service-icon i {
   font-size: 1.05rem;
+}
+
+.card h3 .service-icon i {
+  margin-right: 0;
 }
 
 .card p {
