@@ -1,13 +1,13 @@
 ﻿:root {
-  --bg: #f4f8f8;
+  --bg: #f8f4f4;
   --surface: #ffffff;
-  --ink: #102227;
-  --muted: #4f676e;
-  --brand: #007c83;
-  --brand-2: #13a7af;
-  --accent: #ff6b35;
-  --line: #d7e3e6;
-  --shadow: 0 14px 30px rgba(16, 34, 39, 0.1);
+  --ink: #2a1111;
+  --muted: #6f4b4b;
+  --brand: #b3001b;
+  --brand-2: #e31b23;
+  --accent: #7f0d0d;
+  --line: #ead8d8;
+  --shadow: 0 14px 30px rgba(109, 14, 14, 0.12);
 }
 
 * {
@@ -19,7 +19,7 @@
 body {
   font-family: "Manrope", "Segoe UI", sans-serif;
   color: var(--ink);
-  background: radial-gradient(circle at 15% 20%, #e7f8f8 0%, var(--bg) 45%), #eef4f5;
+  background: radial-gradient(circle at 15% 20%, #fdeaea 0%, var(--bg) 45%), #f7eded;
   line-height: 1.6;
 }
 
@@ -42,7 +42,7 @@ a {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(8px);
-  background: rgba(244, 248, 248, 0.88);
+  background: rgba(248, 244, 244, 0.9);
   border-bottom: 1px solid var(--line);
 }
 
@@ -58,6 +58,7 @@ a {
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  color: var(--brand);
 }
 
 .nav {
@@ -96,13 +97,13 @@ a {
 .btn-primary {
   color: #fff;
   background: linear-gradient(120deg, var(--brand), var(--brand-2));
-  box-shadow: 0 10px 20px rgba(19, 167, 175, 0.25);
+  box-shadow: 0 10px 20px rgba(179, 0, 27, 0.28);
 }
 
 .btn-secondary {
   color: #fff;
   background: var(--accent);
-  box-shadow: 0 10px 20px rgba(255, 107, 53, 0.25);
+  box-shadow: 0 10px 20px rgba(127, 13, 13, 0.25);
 }
 
 .btn-ghost {
@@ -219,8 +220,8 @@ h2 {
 }
 
 .metric {
-  background: #0d3138;
-  color: #e8f7f8;
+  background: #4a0f14;
+  color: #ffecee;
   border-radius: 16px;
   padding: 18px;
 }
@@ -232,8 +233,8 @@ h2 {
 }
 
 .cta-band {
-  background: linear-gradient(120deg, #0d3138, #0f4f58);
-  color: #e8f7f8;
+  background: linear-gradient(120deg, #5d0f18, #a0131f);
+  color: #ffecee;
   border-radius: 20px;
   padding: 30px;
   display: flex;
@@ -244,7 +245,7 @@ h2 {
 }
 
 .cta-band p {
-  color: #b8d6d9;
+  color: #f6c5ca;
 }
 
 .service-hero,
