@@ -1,87 +1,166 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato | Cetus Technologys</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">Cetus Technologys</a>
-      <nav class="nav">
-        <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
-        <a href="sobre.html"><i class="bi bi-building"></i> Sobre</a>
-        <a href="servicos.html"><i class="bi bi-grid"></i> Serviços</a>
-        <a href="portfolio.html"><i class="bi bi-briefcase"></i> Portfólio</a>
-        <a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a>
-        <a class="active" href="contato.html"><i class="bi bi-envelope"></i> Contato</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-hero">
-      <div class="container reveal">
-        <p class="breadcrumb">Home / Contato</p>
-        <h1>Fale com a Cetus Technologys</h1>
-        <p class="section-intro">Envie os detalhes do seu projeto e nossa equipa irá preparar uma proposta personalizada.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Cetus Technologies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="theme-color" content="#090a0c" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Cetus Technologies — início"
+          ><img
+            src="assets/cetus-whale.png"
+            width="72"
+            height="40"
+            alt=""
+          /><span>CETUS<small>TECHNOLOGIES</small></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span>
+        </button>
+        <nav id="main-nav" class="nav" aria-label="Navegação principal">
+          <a href="index.html">Início</a><a href="servicos.html">Serviços</a
+          ><a href="portfolio.html">Projetos</a><a href="sobre.html">A Cetus</a
+          ><a class="nav-contact" href="contato.html"
+            >Vamos conversar <span aria-hidden="true">↗</span></a
+          >
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <div class="container contact-grid">
-        <article class="card reveal">
-          <h3>Informações de Contato</h3>
-          <p><strong><i class="bi bi-envelope-at"></i> Email:</strong> cetustechgeral@gmail.com</p>
-          <p><strong><i class="bi bi-whatsapp"></i> WhatsApp:</strong> 846293055</p>
-          <p><strong><i class="bi bi-geo-alt"></i> Localização:</strong> Maputo, Moçambique</p>
-          <p style="margin-top: 16px;"><a class="btn btn-secondary" href="https://wa.me/258846293055" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i> Atendimento no WhatsApp</a></p>
-        </article>
-
-        <article class="card reveal">
-          <h3>Formulário Profissional</h3>
-          <form id="contact-form">
-            <div class="field">
-              <label for="nome">Nome</label>
-              <input id="nome" name="nome" type="text" required>
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required>
-            </div>
-            <div class="field">
-              <label for="empresa">Empresa</label>
-              <input id="empresa" name="empresa" type="text">
-            </div>
-            <div class="field">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit"><i class="bi bi-send-check"></i> Enviar Mensagem</button>
-          </form>
-        </article>
-      </div>
-
-      <div class="container" style="margin-top: 22px;">
-        <div class="card reveal" style="padding: 0; overflow: hidden; min-height: 320px;">
-          <iframe title="Mapa de Maputo" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Maputo%2C%20Mozambique&output=embed"></iframe>
+    <main id="main">
+      <section class="page-hero">
+        <div class="container reveal">
+          <p class="breadcrumb">Home / Contato</p>
+          <h1>Vamos construir a sua próxima ideia.</h1>
+          <p class="section-intro">
+            Conte-nos o que tem em mente. Vamos entender o desafio e conversar
+            sobre os próximos passos.
+          </p>
         </div>
+      </section>
+
+      <section>
+        <div class="container contact-grid">
+          <article class="card reveal">
+            <h3>Informações de Contato</h3>
+            <p>
+              <strong><i class="bi bi-envelope-at"></i> Email:</strong>
+              cetustechgeral@gmail.com
+            </p>
+            <p>
+              <strong><i class="bi bi-whatsapp"></i> WhatsApp:</strong>
+              846293055
+            </p>
+            <p>
+              <strong><i class="bi bi-geo-alt"></i> Localização:</strong>
+              Maputo, Moçambique
+            </p>
+            <p style="margin-top: 16px">
+              <a
+                class="btn btn-secondary"
+                href="https://wa.me/258846293055"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="bi bi-whatsapp"></i> Atendimento no WhatsApp</a
+              >
+            </p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Conte-nos sobre o projeto</h3>
+            <p>
+              Preencha os detalhes e continue a conversa no WhatsApp. A mensagem
+              só é enviada quando confirmar na aplicação.
+            </p>
+            <form id="contact-form">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="empresa">Empresa</label>
+                <input id="empresa" name="empresa" type="text" />
+              </div>
+              <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">
+                <i class="bi bi-send-check"></i> Continuar no WhatsApp
+              </button>
+              <p id="contact-status" role="status"></p>
+            </form>
+          </article>
+        </div>
+
+        <div class="container" style="margin-top: 22px">
+          <div
+            class="card reveal"
+            style="padding: 0; overflow: hidden; min-height: 320px"
+          >
+            <iframe
+              title="Mapa de Maputo"
+              loading="lazy"
+              allowfullscreen
+              src="https://www.google.com/maps?q=Maputo%2C%20Mozambique&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <a class="brand" href="index.html"
+          ><img
+            src="assets/cetus-whale.png"
+            width="72"
+            height="40"
+            alt=""
+          /><span>CETUS<small>TECHNOLOGIES</small></span></a
+        >
+        <p>Ideias com ambição.<br />Tecnologia com propósito.</p>
+        <a href="mailto:cetustechgeral@gmail.com">cetustechgeral@gmail.com ↗</a>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container"><p>&copy; <span data-current-year></span> Cetus Technologys.</p></div>
-  </footer>
-  <script src="script.js"></script>
-</body>
+      <div class="container footer-bottom">
+        <span>© <span data-current-year>2026</span> Cetus Technologies</span
+        ><span>Maputo, Moçambique · Para onde a sua ideia nos levar.</span
+        ><a href="blog.html">Insights ↗</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
