@@ -14,7 +14,7 @@ if out.exists():
 out.mkdir()
 for path in root.glob('*.html'):
     shutil.copy2(path, out / path.name)
-for name in ('style.css', 'script.js'):
+for name in ('style.css', 'script.js', 'favicon.ico'):
     shutil.copy2(root / name, out / name)
 for name in ('assets', 'servicos'):
     shutil.copytree(root / name, out / name)
