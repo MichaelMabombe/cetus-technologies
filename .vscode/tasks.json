@@ -4,8 +4,7 @@
         {
             "label": "Servir site Cetus",
             "type": "process",
-            "command": "python3",
-            "args": ["-u", "-m", "http.server", "8080", "--bind", "127.0.0.1"],
+            "command": "${workspaceFolder}/scripts/serve-local.sh",
             "options": {
                 "cwd": "${workspaceFolder}"
             },
